@@ -8,11 +8,11 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="row second-nav-item" id="nav-iteam">
-           <div class="col-6 logo">SNOOTH</div>
-           <div class="">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </div>
-          <div class="col-1 header-items">CART</div>
+            <div class="col-6 logo">SNOOTH</div>
+            <div class="">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="col-1 header-items">CART</div>
           </div>
           <div class="row nav-heading" id="ifNotMobile">
             <div class="col-1">ABOUT</div>
@@ -83,15 +83,15 @@
           </div>
         </div>
         <!-- second-banner----------------------------------------------------------- -->
-        <div class="row backpray bottles">
-          <div class="col-md-3">
-            <img src="assets/bottle1.png" alt="">
-            <h6>Acne Cream</h6>
-            <p>All Natural Ingredients.</p>
-            <p>$24.99</p>
+        <div class="row backpray bottles" >
+          <div class="col-md-3" *ngFor="let item of banner1">
+            <img src={{item.image}} alt="">
+            <h6>{{item.name}}</h6>
+            <p>{{item.details}}</p>
+            <p>${{item.price}}</p>
             <button class="cart-btn"><i class="fa-solid fa-bookmark"></i> Add to cart</button>
           </div>
-          <div class="col-md-3">
+          <!-- <div class="col-md-3">
             <img src="assets/bottle2.png" alt="">
             <h6>Vitiligio Solution</h6>
             <p>All Natural Ingredients.</p>
@@ -111,7 +111,7 @@
             <p>All Natural Ingredients.</p>
             <p>$24.99</p>
             <button class="cart-btn"><i class="fa-solid fa-bookmark"></i> Add to cart</button>
-          </div>
+          </div> -->
         </div>
         <!-- man-banner -------------------------------------------------------------------->
         <div class="container-fluid">
@@ -136,66 +136,66 @@
               Shop all products
             </div>
           </div>
-          <div class="row bottles backpray">
-            <div class="col-md-3">
-              <img src="assets/bottle.png" alt="">
-              <h6>Psoriasis Cream</h6>
-              <p>All Natural Ingredients.</p>
-              <p>$24.99</p>
+          <div class="row bottles backpray ">
+            <div class="col-md-3" *ngFor="let item of banner2">
+              <img src={{item.image}} alt="">
+              <h6>{{item.name}}</h6>
+              <p>{{item.details}}</p>
+              <p>${{item.price}}</p>
               <button class="cart-btn"><i class="fa-solid fa-bookmark"></i> Add to cart</button>
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
               <img src="assets/bottle-img.png" alt="" class="">
               <h6>Psoriasis Cream</h6>
               <p>All Natural Ingredients.</p>
               <p>$24.99</p>
               <button class="cart-btn"><i class="fa-solid fa-bookmark"></i> Add to cart</button>
-            </div>
-            <div class="col-md-3">
+            </div> -->
+            <!-- <div class="col-md-3">
               <img src="assets/bottle4.png" alt="" class="">
               <h6>Psoriasis Cream</h6>
               <p>All Natural Ingredients.</p>
               <p>$24.99</p>
               <button class="cart-btn"><i class="fa-solid fa-bookmark"></i> Add to cart</button>
-            </div>
-            <div class="col-md-3">
+            </div> -->
+            <!-- <div class="col-md-3">
               <img src="assets/bottle-5.png" alt="" class="">
               <h6>Psoriasis Cream</h6>
               <p>All Natural Ingredients.</p>
               <p>$24.99</p>
               <button class="cart-btn"><i class="fa-solid fa-bookmark"></i> Add to cart</button>
             </div>
-          </div>
+          </div> -->
           <!-- bottles------------------------------------------------------------------------- -->
-          <div class="row bottles backpray">
+          <!-- <div class="row bottles backpray">
             <div class="col-md-3">
               <img src="assets/bottle2.png" alt="" class="drop">
               <h6>Psoriasis Cream</h6>
               <p>All Natural Ingredients.</p>
               <p>$24.99</p>
               <button class="cart-btn"><i class="fa-solid fa-bookmark"></i> Add to cart</button>
-            </div>
-            <div class="col-md-3">
+            </div> -->
+            <!-- <div class="col-md-3">
               <img src="assets/bottle6.png" alt="">
               <h6>Psoriasis Cream</h6>
               <p>All Natural Ingredients.</p>
               <p>$24.99</p>
               <button class="cart-btn"><i class="fa-solid fa-bookmark"></i> Add to cart</button>
-            </div>
-            <div class="col-md-3">
+            </div> -->
+            <!-- <div class="col-md-3">
               <img src="assets/cream.png" alt="">
               <h6>Psoriasis Cream</h6>
               <p>All Natural Ingredients.</p>
               <p>$24.99</p>
               <button class="cart-btn"><i class="fa-solid fa-bookmark"></i> Add to cart</button>
-            </div>
-            <div class="col-md-3">
+            </div> -->
+            <!-- <div class="col-md-3">
               <img src="assets/dropper.png" alt="">
               <h6>Psoriasis Cream</h6>
               <p>All Natural Ingredients.</p>
               <p>$24.99</p>
               <button class="cart-btn"><i class="fa-solid fa-bookmark"></i> Add to cart</button>
-            </div>
+            </div> -->
           </div>
           <!-- hand-banner--------------------------------------------------------------------------- -->
           <div class="row hand-banner">
@@ -221,14 +221,14 @@
                 </div>
               </div>
               <div class="row bottles">
-                <div class="col-md-3">
-                  <img src="assets/bottle.png" alt="" class="">
-                  <h6>Psoriasis Cream</h6>
-                  <p>All Natural Ingredients.</p>
-                  <p>$24.99</p>
+                <div class="col-md-3" *ngFor="let item of banner3">
+                  <img src={{item.image}} alt="" class="">
+                  <h6>{{item.name}}</h6>
+                  <p>{{item.details}}</p>
+                  <p>${{item.price}}</p>
                   <button class="cart-btn">Add to cart</button>
                 </div>
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                   <img src="assets/bottle-img.png" alt="">
                   <h6>Sunburn Balm</h6>
                   <p>All Natural Ingredients.</p>
@@ -248,7 +248,7 @@
                   <p>All Natural Ingredients.</p>
                   <p>$24.99</p>
                   <button class="cart-btn">Add to cart</button>
-                </div>
+                </div> -->
               </div>
               <!-- ingreds/ ------------------------------------------------------------------- -->
               <div class="center">
@@ -417,3 +417,4 @@
     <div class="menu-item">CONSULTATION</div>
   </div>
 </div>
+<!-- <div>*ngFor="let item of banner1"</div> -->
